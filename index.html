@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      :root {
+        --Softblue: hsl(215, 51%, 70%);
+        --Cyan: hsl(178, 100%, 50%);
+        --Verydarkbluemainbg: hsl(217, 54%, 11%);
+        --Verydarkbluecardbg: hsl(216, 50%, 16%);
+        --Verydarkblueline: hsl(215, 32%, 27%);
+        --White: hsl(0, 0%, 100%);
+        --verydarkblueshadow1: hsl(216, 40%, 6%);
+      }
+      body {
+        width: 1440px;
+        height: 1080px;
+        background-color: var(--Verydarkbluemainbg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        background-color: var(--Verydarkbluecardbg);
+        width: 330px;
+        height: auto;
+        border-radius: 10px;
+        border-bottom: 7px solid var(--verydarkblueshadow1);
+        border-right: 7px solid var(--verydarkblueshadow1);
+        padding-top: 25px;
+      }
+      h1 {
+        font-family: "Outfit";
+        color: var(--White);
+        font-size: 18px;
+        font-weight: 700;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 25px;
+        padding-top: 15px;
+      }
+      .primarytext {
+        font-family: "Outfit";
+        color: var(--Softblue);
+        padding-left: 25px;
+        padding-top: 5px;
+        font-size: 18px;
+        font-weight: 400;
+      }
+      .secondarytext {
+        font-family: "Outfit";
+        color: var(--Softblue);
+        font-weight: 400;
+      }
+      .jules {
+        font-family: "Outfit";
+        color: var(--White);
+      }
+      .value {
+        display: flex;
+        justify-content: center;
+        gap: 87px;
+        padding-top: 5px;
+        font-weight: 500;
+      }
+      .col1 {
+        font-family: "Outfit";
+        color: var(--Cyan);
+        margin-left: -90px;
+        font-size: 18px;
+      }
+      .col2 {
+        font-family: "Outfit";
+        color: var(--Softblue);
+        font-size: 18px;
+      }
+      .cardimg {
+        width: 280px;
+        height: 280px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        transition: 0.3s ease;
+      }
+      .creatorpic {
+        width: 35px;
+        height: auto;
+        border-radius: 100%;
+        border: 1px solid var(--White);
+      }
+      .division {
+        border-bottom: 1px solid var(--Verydarkblueline);
+        margin: 10px 25px;
+        padding-top: 15px;
+      }
+      .footer {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 25px;
+        padding-top: 10px;
+        margin-bottom: 25px;
+        gap: 20px;
+        font-size: 16px;
+      }
+      @media screen and (max-width: 1024px) {
+        body {
+          width: 1024px;
+          height: fit-content;
+          margin: 50px auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img class="cardimg" src="images/image-equilibrium.jpg" alt="ntfphoto" />
+      <h1>Equilibrium #3429</h1>
+      <p class="primarytext">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div class="value">
+        .
+        <span class="col1"
+          ><img src="images/icon-ethereum.svg" alt="eth" /> 0.45 ETH</span
+        >
+        <span class="col2"
+          ><img src="images/icon-clock.svg" alt="clock" /> 3 days left</span
+        >
+      </div>
+      <div class="division"></div>
+      <div class="footer">
+        <img class="creatorpic" src="/images/image-avatar.png" alt="Jules" />
+        <p class="secondarytext">
+          Creation of <span class="jules">Jules Wyvern</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
