@@ -32,10 +32,18 @@
         --White: hsl(0, 0%, 100%);
         --verydarkblueshadow1: hsl(216, 40%, 6%);
       }
+      * {
+        margin: 0;
+      }
       body {
-        width: 1440px;
-        height: 1080px;
         background-color: var(--Verydarkbluemainbg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
+      .container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -130,7 +138,6 @@
         body {
           width: 1024px;
           height: fit-content;
-          margin: 50px auto;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -139,27 +146,33 @@
     </style>
   </head>
   <body>
-    <div class="card">
-      <img class="cardimg" src="images/image-equilibrium.jpg" alt="ntfphoto" />
-      <h1>Equilibrium #3429</h1>
-      <p class="primarytext">
-        Our Equilibrium collection promotes balance and calm.
-      </p>
-      <div class="value">
-        .
-        <span class="col1"
-          ><img src="images/icon-ethereum.svg" alt="eth" /> 0.45 ETH</span
-        >
-        <span class="col2"
-          ><img src="images/icon-clock.svg" alt="clock" /> 3 days left</span
-        >
-      </div>
-      <div class="division"></div>
-      <div class="footer">
-        <img class="creatorpic" src="/images/image-avatar.png" alt="Jules" />
-        <p class="secondarytext">
-          Creation of <span class="jules">Jules Wyvern</span>
+    <div class="container">
+      <div class="card">
+        <img
+          class="cardimg"
+          src="images/image-equilibrium.jpg"
+          alt="ntfphoto"
+        />
+        <h1>Equilibrium #3429</h1>
+        <p class="primarytext">
+          Our Equilibrium collection promotes balance and calm.
         </p>
+        <div class="value">
+          .
+          <span class="col1"
+            ><img src="images/icon-ethereum.svg" alt="eth" /> 0.45 ETH</span
+          >
+          <span class="col2"
+            ><img src="images/icon-clock.svg" alt="clock" /> 3 days left</span
+          >
+        </div>
+        <div class="division"></div>
+        <div class="footer">
+          <img class="creatorpic" src="/images/image-avatar.png" alt="Jules" />
+          <p class="secondarytext">
+            Creation of <span class="jules">Jules Wyvern</span>
+          </p>
+        </div>
       </div>
     </div>
   </body>
